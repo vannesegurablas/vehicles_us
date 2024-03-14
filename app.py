@@ -35,3 +35,13 @@ if pie_button: # al hacer clic en el botón
     fig = px.pie(car_data, values='model_year', names='condition')
         
     st.plotly_chart(fig, use_container_width=True)
+
+build_sun= st.checkbox('Quieres saber las condiciones del coche según el modelo mediante un gráfico circular?')
+sun_button = st.button('Construir gráfico circular')
+
+if sun_button: # al hacer clic en el botón
+    st.write('Creación de un gráfico circular según las condicones los coches')
+            
+    fig = px.pie(car_data, values='model_year', names='condition')
+        
+    st.plotly_chart(fig, use_container_width=True)

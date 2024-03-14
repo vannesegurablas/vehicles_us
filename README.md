@@ -3,5 +3,7 @@ Cree el primer commit en donde se puede crear un histograma y me preguntan si qu
 Olvide colocar el encabezado aca lo agege http://localhost:8501/
 Cambie el tipo de histrogram que quiero mostrar y selecciono el modelo_year queda asi http://localhost:8501/
 Al colocar todos las graficas que quiero me salio este link http://localhost:8501/
+AL hacer el render se obtuvo la siguiente pagina https://vehicles-us-4gny.onrender.com/
+
 
 
