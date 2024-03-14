@@ -20,9 +20,9 @@ build_dispersion= st.checkbox('Quieres construir un diagrama de dispersión seg�
 disp_button = st.button('Construir diagrama de dispersión') # crear un botón
 
 if disp_button: # al hacer clic en el botón
-    st.write('Creación de un diagrama de dispersión según el odométro de los coches')
+    st.write('Creación de un diagrama de dispersión según el odométro de los coches vs su precio')
             
-    fig = px.histogram(car_data, x="odometer")
+    fig = px.scatter(car_data, x="odometer", y="price")
         
     st.plotly_chart(fig, use_container_width=True)
 
