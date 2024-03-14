@@ -36,12 +36,15 @@ if pie_button: # al hacer clic en el botón
         
     st.plotly_chart(fig, use_container_width=True)
 
-build_sun= st.checkbox('Quieres saber las condiciones del coche según el modelo mediante un gráfico circular?')
-sun_button = st.button('Construir gráfico circular')
+build_sun= st.checkbox('Quieres saber las condiciones del coche según el modelo mediante un gráfico sunburst?')
+sun_button = st.button('Construir gráfico sunburst')
 
 if sun_button: # al hacer clic en el botón
-    st.write('Creación de un gráfico circular según las condicones los coches')
-            
-    fig = px.pie(car_data, values='model_year', names='condition')
-        
+    st.write('Creación de un gráfico sunburst según las condiciones los coches')
+    car_data = car_data.dropna(subset=['model_year'])
+    fig = px.sunburst(
+        car_data,
+        path=["condition",'model_year'],
+        values='cylinders',
+    )
     st.plotly_chart(fig, use_container_width=True)
