@@ -1,4 +1,5 @@
 # vehicles_us
+Se llevó a cabo un análisis detallado de datos de vehículos en EE. UU. utilizando pandas para limpiar y estructurar la información, plotly_express para crear gráficas interactivas, y streamlit para desarrollar una aplicación web que permitiera visualizar estos datos de manera dinámica. El proyecto incluyó la creación de un archivo requirements.txt con las librerías necesarias, un notebook para análisis preliminares, y una estructura compatible con Render. Se desarrollaron funcionalidades como filtros con checkbox y gráficos interactivos, todo desplegado en Render para ofrecer una experiencia visual y explorativa de los datos.
 1. Para este proyecto se empleo GitHub y Render 
 2. Una vez creadas las cuentas se creo un nuevo repositorio en GitHub el cual se llamo vehicles_us y se enecuntra disponible en el siguiente enlace https://github.com/vannesegurablas/vehicles_us
 3. Se establecio que en este repositorio se creara un archivo readme y uno .gitignore9
